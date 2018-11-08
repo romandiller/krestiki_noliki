@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>#КрестикиНолики</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="<%=assetFingerprint('/images/favicon.png') %>" type="image/png">
+	<link rel='stylesheet' href="<%=assetFingerprint('/stylesheets/style.css') %>" />
+</head>
+<body>
+<section id="gameZone">
+	<h2 id="gameHeader"></h2>
+	<div id="conteiner" class=""></div>
+	<button data-action="startGame" id="startButton">Начать новую игру</button>
+</section>
+<aside id="historyZone">
+	<h3 class="header"></h3>
+	<ul class="list"></ul>
+</aside>
+<script src="/socket.io/socket.io.js"></script>
+<script src="<%= assetFingerprint('/javascripts/main.js') %>" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "game.localhost",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=production node app.js"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-favicon": "^2.0.1",
+    "mysql": "^2.16.0",
+    "socket.io": "^2.1.1",
+    "static-asset": "^0.6.0"
+  }
+}

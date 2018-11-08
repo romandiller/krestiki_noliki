@@ -1,0 +1,147 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	outline: none;
+	list-style-type: none;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+section, aside {
+	position: absolute;
+	width: 50%;
+	top: 0;
+}
+section {
+	left: 0;
+	text-align: center;
+	padding: 25px;
+	max-height: 450px;
+}
+section #conteiner {
+	width: 312px;
+	margin: 0 auto;
+	display: -ms-grid;
+	display: grid;
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	grid-gap: 2px;
+	grid-auto-rows: minmax(100px, auto);
+	margin-bottom: 25px;
+}
+section #conteiner span {
+	border: 1px solid #ccc;
+	position: relative;
+}
+section #conteiner span svg {
+	width: 70px;
+	height: 70px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+}
+section #conteiner.game span:hover {
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.1);
+}
+section button {
+	padding: 10px 0px;
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	border: none;
+	background-color: #0097e6;
+	color: #fff;
+	cursor: pointer;
+}
+section button:hover {
+	background-color: #00a8ff;
+}
+section button[disabled] {
+	background-color: #414141;
+	color: #888;
+	cursor: default;
+}
+section h2 {
+	margin-bottom: 25px;
+}
+aside {
+	right: 0;
+	border: 1px solid #ededed;
+	padding: 25px;
+	text-align: center;
+}
+aside h3 {
+	margin-bottom: 15px;
+	color: #888;
+	font-weight: normal;
+}
+aside li {
+	padding: 10px;
+	text-align: left;
+}
+aside li.item:nth-of-type(even) {
+	background-color: rgba(0,0,0,0.1);
+}
+aside p {
+	margin-bottom: 5px;
+}
+aside p span {
+	color: #888888;
+}
+aside .gameCount {
+	margin-bottom: 10px;
+	color: #414141;
+}
+aside .actions {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
+	    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	grid-gap: 2px;
+	grid-auto-rows: minmax(100px, auto);
+}
+aside .actions li {
+	border: 1px solid #ccc;
+}
+#congratulation {
+	display: none;
+	width: 50%;
+	max-height: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 25px;
+    border-radius: 5px; 
+}
+#congratulation[data-view="true"] {
+	display: block;
+}
+#congratulation img {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+}
+#congratulation button {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	padding: 2px;
+}
+#congratulation button svg {
+	display: block;
+}
